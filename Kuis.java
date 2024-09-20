@@ -3,6 +3,10 @@ public class Kuis extends Konten{
     private int jumlahJawabanBenar, jumlahJawabanSalah;
     private float nilaiKuis;
 
+    public void isiDetail(int jumlahPertanyaan){
+        this.jumlahPertanyaan = jumlahPertanyaan;
+    }
+
     public void tampilkanDetail(){
         super.tampilkanDetail();
         System.out.println("=======================================");
