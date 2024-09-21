@@ -1,17 +1,33 @@
+// public class Artikel extends Konten {
+//     private int panjang;
+//     private String isiArtikel;
+
+//     public void tampilkanDetail() {
+//         super.tampilkanDetail();
+//         System.out.println("Panjang Artikel: " + panjang);
+//     }
+
+//     public String tampilkanArtikel(){
+//         return isiArtikel;
+//     }
+
+//     public void isikanArtikel(String isi){
+//         isiArtikel = isi;
+//     }
+// }
+
+
 public class Artikel extends Konten {
     private int panjang;
-    private String isiArtikel;
 
+    public Artikel(int idKonten, String judul, int panjang) {
+        super(idKonten, judul, "Artikel", "Instruktur");
+        this.panjang = panjang;
+    }
+
+    @Override
     public void tampilkanDetail() {
         super.tampilkanDetail();
-        System.out.println("Panjang Artikel: " + panjang);
-    }
-
-    public String tampilkanArtikel(){
-        return isiArtikel;
-    }
-
-    public void isikanArtikel(String isi){
-        isiArtikel = isi;
+        System.out.println("Panjang      : " + panjang + " kata");
     }
 }
