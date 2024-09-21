@@ -8,6 +8,7 @@ public class Instruktur {
         this.nama = nama;
         this.keahlian = keahlian;
     }
+
     public Konten buatKonten(String tipe, String judul, int detail) {
         switch (tipe) {
             case "Video":
@@ -20,5 +21,12 @@ public class Instruktur {
                 return null;
         }
     }
+
+    public void tambahKontenKeKursus(Kursus kursus, Konten konten) {
+        kursus.tambahKonten(konten);
+    }
+
+    
 }
+
  

@@ -59,6 +59,9 @@ public class Kuis extends Konten {
     @Override
     public void tampilkanDetail() {
         super.tampilkanDetail();
+        System.out.println("Jenis Konten : Kuis");
+        System.out.println("Judul        : " + getJudul());
         System.out.println("Jumlah Pertanyaan : " + jumlahPertanyaan);
     }
 }
+

@@ -31,6 +31,7 @@ public class Video extends Konten {
     @Override
     public void tampilkanDetail() {
         super.tampilkanDetail();
+        System.out.println("Judul        : " + getJudul());
         System.out.println("Durasi       : " + durasi + " menit");
     }
 }

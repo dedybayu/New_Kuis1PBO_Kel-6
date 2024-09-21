@@ -28,6 +28,8 @@ public class Artikel extends Konten {
     @Override
     public void tampilkanDetail() {
         super.tampilkanDetail();
+        System.out.println("Jenis Konten : Artikel");
+        System.out.println("Judul        : " + getJudul());
         System.out.println("Panjang      : " + panjang + " kata");
     }
 }

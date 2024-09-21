@@ -31,28 +31,37 @@ public class Kursus {
     private int idKursus;
     private String judul;
     private int harga; // Harga per kursus
+    private List<Konten> daftarKonten; // Menyimpan konten terkait kursus
 
     public Kursus(int idKursus, String judul, int harga) {
         this.idKursus = idKursus;
         this.judul = judul;
         this.harga = harga;
+        this.daftarKonten = new ArrayList<>();
     }
 
-    public int getIdKursus() {
-        return idKursus;
+    public void tambahKonten(Konten konten) {
+        daftarKonten.add(konten);
+        System.out.println("Konten \"" + konten.getJudul() + "\" ditambahkan ke kursus \"" + judul + "\".");
     }
 
-    public String getJudul() {
-        return judul;
+    public void tampilkanKonten() {
+        System.out.println("Kursus: " + judul);
+        for (Konten konten : daftarKonten) {
+            konten.tampilkanDetail();
+            System.out.println("------------------------------");
+        }
     }
 
     public int getHarga() {
         return harga;
     }
 
-    public void tampilkanDetailKursus() {
-        System.out.println("ID Kursus    : " + idKursus);
-        System.out.println("Judul Kursus : " + judul);
-        System.out.println("Harga        : " + harga);
+    public List<Konten> getDaftarKonten() {
+        return daftarKonten;
+    }
+
+    public String getJudul() {
+        return judul;
     }
 }

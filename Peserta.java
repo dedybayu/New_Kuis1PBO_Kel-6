@@ -31,14 +31,14 @@ public class Peserta {
         System.out.println(nama + " telah mendaftar ke kursus: " + kursus.getJudul());
     }
 
-    public List<Kursus> getDaftarKursus() {
-        return daftarKursus;
-    }
-
     public void tampilkanKursus() {
         System.out.println("Daftar Kursus untuk Peserta: " + nama);
         for (Kursus kursus : daftarKursus) {
-            kursus.tampilkanDetailKursus();
+            kursus.tampilkanKonten();
         }
+    }
+
+    public List<Kursus> getDaftarKursus() {
+        return daftarKursus;
     }
 }
