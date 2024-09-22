@@ -47,6 +47,7 @@
 //     }
 // }
 
+import java.util.Scanner;
 
 public class Kuis extends Konten {
     private int jumlahPertanyaan;
@@ -62,6 +63,29 @@ public class Kuis extends Konten {
         System.out.println("Jenis Konten : Kuis");
         System.out.println("Judul        : " + getJudul());
         System.out.println("Jumlah Pertanyaan : " + jumlahPertanyaan);
+    }
+
+    public int kerjakanKuis() {
+        Scanner scanner = new Scanner(System.in);
+        int nilai = 0;
+
+        System.out.println("Kuis: " + getJudul());
+
+        for (int i = 0; i < jumlahPertanyaan; i++) {
+            //Buat Contoh Kuis
+            System.out.println("APA BENAR (Y/N");
+            String jawaban = scanner.nextLine();
+
+            if (jawaban == "Y") {
+                nilai++;
+                System.out.println("Jawaban Benar");
+            } else {
+                System.out.println("Jawaban Salah");
+            }
+        }
+
+        System.out.println("Nilai akhir Anda: " + nilai + " dari " + jumlahPertanyaan);
+        return nilai;
     }
 }
 

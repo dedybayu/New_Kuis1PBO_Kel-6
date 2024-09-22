@@ -14,13 +14,8 @@
 
 
 public class Pembayaran {
-    private Peserta peserta;
-
-    public Pembayaran(Peserta peserta) {
-        this.peserta = peserta;
-    }
-
-    public void prosesPembayaran() {
+    
+    public void prosesPembayaran(Peserta peserta) {
         int totalPembayaran = 0;
         for (Kursus kursus : peserta.getDaftarKursus()) {
             totalPembayaran += kursus.getHarga();

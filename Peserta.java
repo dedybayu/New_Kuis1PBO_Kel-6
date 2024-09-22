@@ -41,4 +41,25 @@ public class Peserta {
     public List<Kursus> getDaftarKursus() {
         return daftarKursus;
     }
+
+    public void kerjakanKuis() {
+        boolean adaKuis = false;
+    
+        for (Kursus kursus : daftarKursus) {
+            List<Konten> daftarKonten = kursus.getDaftarKonten(); // Ambil konten dari kursus
+            
+            for (Konten konten : daftarKonten) {
+                if (konten instanceof Kuis) { // Cek apakah konten adalah kuis
+                    System.out.println("Mengikuti Kuis dari Kursus: " + kursus.getJudul());
+                    ((Kuis) konten).kerjakanKuis(); // Peserta mengerjakan kuis
+                    adaKuis = true;
+                }
+            }
+        }
+    
+        if (!adaKuis) {
+            System.out.println("Tidak ada kuis yang tersedia untuk peserta: " + nama);
+        }
+    }
+    
 }

@@ -9,7 +9,7 @@ public class Instruktur {
         this.keahlian = keahlian;
     }
 
-    public Konten buatKonten(String tipe, String judul, int detail) {
+    public Konten buatKonten(String tipe, String judul, int detail) { //NANTI DITAMBAH KREATOR
         switch (tipe) {
             case "Video":
                 return new Video(1, judul, detail); // detail di sini adalah durasi
@@ -26,7 +26,7 @@ public class Instruktur {
         kursus.tambahKonten(konten);
     }
 
-    
+
 }
 
  

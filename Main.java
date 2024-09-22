@@ -26,6 +26,10 @@ public class Main {
 
         // Tampilkan kursus konten 
         peserta1.tampilkanKursus();
+        peserta1.kerjakanKuis();
+
+        Pembayaran pembayaran = new Pembayaran();
+        pembayaran.prosesPembayaran(peserta1);
     }
 }
 
