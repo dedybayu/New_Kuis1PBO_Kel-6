@@ -21,12 +21,12 @@ public class Main {
         Peserta peserta1 = new Peserta("P01", "Budi", "budi@example.com");
 
         // mendaftarkan kursus
-        peserta1.daftarKursus(kursusJava);
-        peserta1.daftarKursus(kursusPython); // Kursus tanpa konten sebagai contoh
+        peserta1.daftarkanKursus(kursusJava);
+        peserta1.daftarkanKursus(kursusPython); // Kursus tanpa konten sebagai contoh
 
         // Tampilkan kursus konten 
-        peserta1.tampilkanKursus();
-        peserta1.kerjakanKuis();
+        peserta1.tampilkanDetailPeserta();
+        // peserta1.kerjakanKuis();
 
         Pembayaran pembayaran = new Pembayaran();
         pembayaran.prosesPembayaran(peserta1);

@@ -26,17 +26,27 @@ public class Peserta {
         this.daftarKursus = new ArrayList<>();
     }
 
-    public void daftarKursus(Kursus kursus) {
-        daftarKursus.add(kursus);
-        System.out.println(nama + " telah mendaftar ke kursus: " + kursus.getJudul());
-    }
-
-    public void tampilkanKursus() {
-        System.out.println("Daftar Kursus untuk Peserta: " + nama);
+    public void tampilkanDetailPeserta(){
+        System.out.println("Id Peserta : " + id);
+        System.out.println("Nama    : " + nama);
+        System.out.println("Email : " + email);
+        System.out.println("Daftar Kursus Peserta : " + nama);
         for (Kursus kursus : daftarKursus) {
             kursus.tampilkanKonten();
         }
     }
+
+    public void daftarkanKursus(Kursus kursus) {
+        daftarKursus.add(kursus);
+        System.out.println(nama + " telah mendaftar ke kursus: " + kursus.getJudul());
+    }
+
+    // public void tampilkanKursus() {
+    //     System.out.println("Daftar Kursus untuk Peserta: " + nama);
+    //     for (Kursus kursus : daftarKursus) {
+    //         kursus.tampilkanKonten();
+    //     }
+    // }
 
     public List<Kursus> getDaftarKursus() {
         return daftarKursus;
