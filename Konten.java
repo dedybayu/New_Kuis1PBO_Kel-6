@@ -20,7 +20,7 @@
 //     }
 // }
 
-public abstract class Konten {
+public class Konten {
     private int idKonten;
     private String judul;
     private String jenis;

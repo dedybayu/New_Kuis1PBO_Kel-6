@@ -65,27 +65,32 @@ public class Kuis extends Konten {
         System.out.println("Jumlah Pertanyaan : " + jumlahPertanyaan);
     }
 
-    public int kerjakanKuis() {
+    public void kerjakanKuis() {
         Scanner scanner = new Scanner(System.in);
-        int nilai = 0;
-
+        int poin = 0;
+        double nilai;
+    
         System.out.println("Kuis: " + getJudul());
-
+    
         for (int i = 0; i < jumlahPertanyaan; i++) {
-            //Buat Contoh Kuis
-            System.out.println("APA BENAR (Y/N");
+            // Buat Contoh Kuis
+            System.out.println("APA BENAR (Y/N):");
             String jawaban = scanner.nextLine();
-
-            if (jawaban == "Y") {
-                nilai++;
+    
+            if (jawaban.equalsIgnoreCase("y")) {
+                poin++;
                 System.out.println("Jawaban Benar");
             } else {
                 System.out.println("Jawaban Salah");
             }
         }
-
-        System.out.println("Nilai akhir Anda: " + nilai + " dari " + jumlahPertanyaan);
-        return nilai;
+        
+        System.out.println("Poin yang diperoleh: " + poin);
+        
+        // Pastikan pembagian dilakukan dengan double agar hasilnya lebih akurat
+        nilai = ((double) poin / jumlahPertanyaan) * 100;
+    
+        System.out.println("Nilai akhir Anda: " + (int)nilai + " dari 100");
     }
 }
 

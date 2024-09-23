@@ -10,7 +10,7 @@ public class Main {
         // Membuat konten untuk kursus
         Konten videoJava = instruktur.buatKonten("Video", "Belajar Java OOP", 90);
         Konten artikelJava = instruktur.buatKonten("Artikel", "Panduan Java", 2000);
-        Konten kuisJava = instruktur.buatKonten("Kuis", "Tes Pemrograman Java", 10);
+        Konten kuisJava = instruktur.buatKonten("Kuis", "Tes Pemrograman Java", 3);
 
         // menambah konten ke kursus
         instruktur.tambahKontenKeKursus(kursusJava, videoJava);
@@ -26,7 +26,7 @@ public class Main {
 
         // Tampilkan kursus konten 
         peserta1.tampilkanDetailPeserta();
-        // peserta1.kerjakanKuis();
+        peserta1.kerjakanKuis();
 
         Pembayaran pembayaran = new Pembayaran();
         pembayaran.prosesPembayaran(peserta1);
