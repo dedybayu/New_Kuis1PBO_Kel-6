@@ -87,7 +87,6 @@ public class Kuis extends Konten {
         
         System.out.println("Poin yang diperoleh: " + poin);
         
-        // Pastikan pembagian dilakukan dengan double agar hasilnya lebih akurat
         nilai = ((double) poin / jumlahPertanyaan) * 100;
     
         System.out.println("Nilai akhir Anda: " + (int)nilai + " dari 100");
