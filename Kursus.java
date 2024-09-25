@@ -20,7 +20,7 @@ public class Kursus {
     }
 
     public void tampilkanKonten() {
-        System.out.println("--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("ID Kursus    : " + idKursus);
         System.out.println("Nama Kursus  : " + judul);
         System.out.println("Harga Kursus : " + harga);

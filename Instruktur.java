@@ -9,6 +9,14 @@ public class Instruktur {
         this.keahlian = keahlian;
     }
 
+    public void tampilkanDetailInstruktur(){
+        System.out.println("-----------------------------------");
+        System.out.println("ID Instruktur       : " + id);
+        System.out.println("Nama Instruktur     : " + nama);
+        System.out.println("Keahlian Instruktur : " + keahlian);
+        System.out.println("-----------------------------------\n");
+    }
+
     public Konten buatKonten(String tipe, String judul, int detail) { //NANTI DITAMBAH KREATOR
         switch (tipe) {
             case "Video":
