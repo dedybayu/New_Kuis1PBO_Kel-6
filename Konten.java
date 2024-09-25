@@ -12,9 +12,9 @@ public class Konten {
     }
 
     public void tampilkanDetail(){
-        System.out.println("Id Konten : " + idKonten);
+        System.out.println("Id Konten    : " + idKonten);
         System.out.println("Jenis Konten : " + jenis);
-        System.out.println("Kreator : " + kreator);
+        System.out.println("Kreator      : " + kreator);
     }
 
     public String getJudul() {

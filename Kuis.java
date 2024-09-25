@@ -4,15 +4,14 @@ public class Kuis extends Konten {
     private int jumlahPertanyaan;
     Scanner scanner = new Scanner(System.in);
 
-    public Kuis(int idKonten, String judul, int jumlahPertanyaan) {
-        super(idKonten, judul, "Kuis", "Instruktur");
+    public Kuis(int idKonten, String judul, int jumlahPertanyaan, String kreator) {
+        super(idKonten, judul, "Kuis", kreator);
         this.jumlahPertanyaan = jumlahPertanyaan;
     }
 
     @Override
     public void tampilkanDetail() {
         super.tampilkanDetail();
-        System.out.println("Jenis Konten : Kuis");
         System.out.println("Judul        : " + getJudul());
         System.out.println("Jumlah Pertanyaan : " + jumlahPertanyaan);
     }

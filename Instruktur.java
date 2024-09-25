@@ -20,11 +20,11 @@ public class Instruktur {
     public Konten buatKonten(String tipe, String judul, int detail) { //NANTI DITAMBAH KREATOR
         switch (tipe) {
             case "Video":
-                return new Video(1, judul, detail); // detail di sini adalah durasi
+                return new Video(1, judul, detail, nama); // detail di sini adalah durasi
             case "Artikel":
-                return new Artikel(2, judul, detail); // detail di sini adalah panjang artikel
+                return new Artikel(2, judul, detail, nama); // detail di sini adalah panjang artikel
             case "Kuis":
-                return new Kuis(3, judul, detail); // detail di sini adalah jumlah pertanyaan
+                return new Kuis(3, judul, detail, nama); // detail di sini adalah jumlah pertanyaan
             default:
                 return null;
         }
