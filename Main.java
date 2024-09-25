@@ -7,6 +7,8 @@ public class Main {
         Kursus kursusJava = new Kursus(1, "Belajar Java", 500000);
         Kursus kursusPython = new Kursus(2, "Belajar Python", 400000);
 
+
+        
         // Membuat konten untuk kursus
         Konten videoJava = instruktur.buatKonten("Video", "Belajar Java OOP", 90);
         Konten artikelJava = instruktur.buatKonten("Artikel", "Panduan Java", 2000);
@@ -17,6 +19,7 @@ public class Main {
         instruktur.tambahKontenKeKursus(kursusJava, artikelJava);
         instruktur.tambahKontenKeKursus(kursusJava, kuisJava);
 
+        // kursusJava.tampilkanKonten();
         // Membuat peserta
         Peserta peserta1 = new Peserta("P01", "Budi", "budi@example.com");
 
@@ -24,12 +27,14 @@ public class Main {
         peserta1.daftarkanKursus(kursusJava);
         peserta1.daftarkanKursus(kursusPython); // Kursus tanpa konten sebagai contoh
 
-        // Tampilkan kursus konten 
+        // Tampilkan kursus konten
         peserta1.tampilkanDetailPeserta();
         peserta1.kerjakanKuis();
 
         Pembayaran pembayaran = new Pembayaran();
         pembayaran.prosesPembayaran(peserta1);
-    }
-}
 
+        
+    }
+
+}

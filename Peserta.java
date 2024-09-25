@@ -41,20 +41,15 @@ public class Peserta {
         System.out.println(nama + " telah mendaftar ke kursus: " + kursus.getJudul());
     }
 
-    // public void tampilkanKursus() {
-    //     System.out.println("Daftar Kursus untuk Peserta: " + nama);
-    //     for (Kursus kursus : daftarKursus) {
-    //         kursus.tampilkanKonten();
-    //     }
-    // }
-
     public List<Kursus> getDaftarKursus() {
         return daftarKursus;
     }
 
     public void kerjakanKuis() {
         boolean adaKuis = false;
-    
+        System.out.println("\n--------------------------------");
+        System.out.println("Kerjakan Kuis untuk peserta " + nama);
+        System.out.println("--------------------------------");
         for (Kursus kursus : daftarKursus) {
             List<Konten> daftarKonten = kursus.getDaftarKonten(); // Ambil konten dari kursus
             
