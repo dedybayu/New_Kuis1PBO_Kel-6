@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Kuis extends Konten {
     private int jumlahPertanyaan;
+    Scanner scanner = new Scanner(System.in);
 
     public Kuis(int idKonten, String judul, int jumlahPertanyaan) {
         super(idKonten, judul, "Kuis", "Instruktur");
@@ -17,7 +18,6 @@ public class Kuis extends Konten {
     }
 
     public void kerjakanKuis() {
-        Scanner scanner = new Scanner(System.in);
         int poin = 0;
         double nilai;
     
@@ -40,9 +40,7 @@ public class Kuis extends Konten {
         
         nilai = ((double) poin / jumlahPertanyaan) * 100;
     
-        System.out.println("Nilai akhir Anda: " + (int)nilai + " dari 100");
-
-        scanner.close();
+        System.out.println("Nilai akhir Anda: " + (int)nilai + " dari 100");    
     }
 }
 

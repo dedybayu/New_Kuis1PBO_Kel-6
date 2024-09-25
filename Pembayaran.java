@@ -18,7 +18,7 @@ public class Pembayaran {
             if (uang < totalPembayaran) {
                 System.out.println("Uang tidak cukup!");
             } else {
-                int kembalian = totalPembayaran - uang;
+                int kembalian = uang - totalPembayaran;
                 if (kembalian != 0) {
                     System.out.println("Kembalian : " + kembalian);
                     System.out.println("Terimakasih telah mengikuti Kursus");
@@ -27,8 +27,6 @@ public class Pembayaran {
                     System.out.println("Terimakasih telah mengikuti Kursus");
                 }
             }
-            
-
         } while (uang < totalPembayaran);
         input.close();
     }
