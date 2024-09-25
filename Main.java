@@ -1,13 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // tambah instruktur
         Instruktur instruktur = new Instruktur("I01", "Andi", "Pemrograman");
-
+        
         // Membuat kursus
         Kursus kursusJava = new Kursus(1, "Belajar Java", 500000);
         Kursus kursusPython = new Kursus(2, "Belajar Python", 400000);
-
-
         
         // Membuat konten untuk kursus
         Konten videoJava = instruktur.buatKonten("Video", "Belajar Java OOP", 90);
