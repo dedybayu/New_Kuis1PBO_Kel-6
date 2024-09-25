@@ -30,6 +30,6 @@ public class Pembayaran {
             
 
         } while (uang < totalPembayaran);
-
+        input.close();
     }
 }

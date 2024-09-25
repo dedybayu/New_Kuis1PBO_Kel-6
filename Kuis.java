@@ -41,6 +41,8 @@ public class Kuis extends Konten {
         nilai = ((double) poin / jumlahPertanyaan) * 100;
     
         System.out.println("Nilai akhir Anda: " + (int)nilai + " dari 100");
+
+        scanner.close();
     }
 }
 
